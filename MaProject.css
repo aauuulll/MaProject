@@ -1,0 +1,58 @@
+/* CSS declarations go here */
+body{
+			background: #ddd;
+			z-index: 1;
+		}
+		.cont-right{
+			display: flex;
+			flex-direction:row;
+			position: relative;
+		}
+		.cont-down{
+			display: flex;
+			flex-direction:column;
+			position: relative;
+		}
+		.content{
+
+		}
+		.paper{
+			background: #fff;
+			padding: 4px;
+			margin: 10px;
+			min-width: 100px;
+			min-height: 50px;
+			color: #222;
+			
+		}
+		.content::before{
+			height: 100%;
+			width:50%;
+			top: 30px;
+			
+			border: 2px #000 solid;
+			border-bottom: none;
+			border-right: none;
+			z-index: -1;
+			
+			display: block;
+			position: absolute;	
+			content: "";
+		}
+		
+
+		.cont-right:last-child > .content::before{
+			border: none;
+			border-top: 2px #000 solid;
+		}
+
+		.container{
+			display: flex;
+			flex-direction:column;
+			position: relative;
+		}
+		.container > .cont-right:first-child > .content::before{
+			width: 100px;
+			left: 50px;
+			
+		}
