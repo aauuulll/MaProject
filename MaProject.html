@@ -1,14 +1,123 @@
-<head>
-  <title>MaProject</title>
-</head>
+<html>
+	<head>
+	</head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+	<style type="text/css">
+		body{
+			background: #ddd;
+			z-index: 1;
+		}
+		.cont-right{
+			display: flex;
+			flex-direction:row;
+			position: relative;
+		}
+		.cont-down{
+			display: flex;
+			flex-direction:column;
+			position: relative;
+		}
+		.content{
 
-  {{> hello}}
-</body>
+		}
+		.paper{
+			background: #fff;
+			padding: 4px;
+			margin: 10px;
+			min-width: 100px;
+			min-height: 50px;
+			color: #222;
+			
+		}
+		.content::before{
+			height: 100%;
+			width:50%;
+			top: 30px;
+			
+			border: 2px #000 solid;
+			border-bottom: none;
+			border-right: none;
+			z-index: -1;
+			
+			display: block;
+			position: absolute;	
+			content: "";
+		}
+		
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+		.cont-right:last-child > .content::before{
+			border: none;
+			border-top: 2px #000 solid;
+		}
+
+		.container{
+			display: flex;
+			flex-direction:column;
+			position: relative;
+		}
+		.container > .cont-right:first-child > .content::before{
+			width: 100px;
+			left: 50px;
+			
+		}
+		
+	</style>
+
+	<body>
+		<div class="container">
+			<div class="cont-right">
+				<div class="content">
+					<div class="paper" draggable="true">Mesjid</div>				
+				</div>
+				<div class="cont-down">
+					<div class="cont-right">
+						<div class="content">
+							<div class="paper" draggable="true">Struktur</div>
+						</div>
+						<div class="cont-down">
+							<div class="cont-right">
+								<div class="content">
+									<div class="paper" draggable="true">Beton</div>
+								</div>
+								
+							</div>
+							<div class="cont-right">
+								<div class="content">
+									<div class="paper" draggable="true">Besi</div>
+								</div>
+								
+							</div>
+							<div class="cont-right">
+								<div class="content">
+									<div class="paper" draggable="true">Bekisting</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="cont-right">
+						<div class="content">
+							<div class="paper" draggable="true">Arsitektur</div>
+						</div>
+						<div class="cont-down">
+							<div class="cont-right">
+								<div class="content">
+									<div class="paper" draggable="true">Atap</div>
+								</div>
+								
+							</div>
+							<div class="cont-right">
+								<div class="content">
+									<div class="paper" draggable="true">Tambahan</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
