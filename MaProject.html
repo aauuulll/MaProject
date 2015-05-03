@@ -3,58 +3,72 @@
 </head>
 
 <body>
-		<div class="container">
-			<div class="cont-right">
+
+		<ol class="sortable">
+			<li class="cont-right">
 				<div class="content">
-					<div class="paper" draggable="true">Mesjid</div>				
+					<div class="paper">Mesjid</div>				
 				</div>
-				<div class="cont-down">
-					<div class="cont-right">
+
+				<ol class="cont-down">
+					<li class="cont-right">
 						<div class="content">
-							<div class="paper" draggable="true">Struktur</div>
+							<div class="paper">Struktur</div>
 						</div>
-						<div class="cont-down">
-							<div class="cont-right">
+						<ol class="cont-down">
+							<li class="cont-right">
 								<div class="content">
-									<div class="paper" draggable="true">Beton</div>
+									<div class="paper">Beton</div>
 								</div>
 								
-							</div>
-							<div class="cont-right">
+							</li>
+							<li class="cont-right">
 								<div class="content">
-									<div class="paper" draggable="true">Besi</div>
+									<div class="paper">Besi</div>
 								</div>
 								
-							</div>
-							<div class="cont-right">
+							</li>
+							<li class="cont-right">
 								<div class="content">
-									<div class="paper" draggable="true">Bekisting</div>
+									<div class="paper">Bekisting</div>
 								</div>
 								
-							</div>
+							</li>
 							
-						</div>
-					</div>
-					<div class="cont-right">
+						</ol>
+					</li>
+					<li class="cont-right">
 						<div class="content">
-							<div class="paper" draggable="true">Arsitektur</div>
+							<div class="paper">Arsitektur</div>
 						</div>
-						<div class="cont-down">
-							<div class="cont-right">
+						<ol class="cont-down">
+							<li class="cont-right">
 								<div class="content">
-									<div class="paper" draggable="true">Atap</div>
+									<div class="paper">Atap</div>
 								</div>
 								
-							</div>
-							<div class="cont-right">
+							</li>
+							<li class="cont-right">
 								<div class="content">
-									<div class="paper" draggable="true">Tambahan</div>
+									<div class="paper">Tambahan</div>
 								</div>
 								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+	        $('.sortable').nestedSortable({
+	            handle: 'div',
+	            items: 'li',
+	            toleranceElement: '> div'
+	        });
+
+	    });
+	</script>
 </body>
