@@ -27,20 +27,33 @@ body{
 		}
 		.content::before{
 			height: 100%;
-			width:70%;
+			width:100px;
 			top: 30px;
-			left: -5%;
+			left: -20px;
 			
 			border: 2px #000 solid;
 			border-bottom: none;
 			border-right: none;
-			z-index: -1;
 			
+			z-index: -1;
 			display: block;
 			position: absolute;	
 			content: "";
 		}
-		
+		.cont-right:first-child > .content::after{
+			border: none;
+			border-top: 2px #000 solid;
+
+			height: 100%;
+			width:100px;
+			top: 30px;
+			left: -50px;
+			
+			z-index: -1;
+			display: block;
+			position: absolute;	
+			content: "";
+		}
 
 		.cont-right:last-child > .content::before{
 			border: none;
@@ -56,4 +69,12 @@ body{
 			width: 120px;
 			left: 50px;
 			
+		}
+		.placeholder{
+			outline: 1px dashed #4183C4;
+			width: 100px;
+			height: 50px;
+		}
+		.ui-sortable-helper .ui-sortable-handle::before,.ui-sortable-helper .ui-sortable-handle::after{
+			display: none;
 		}
