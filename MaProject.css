@@ -27,35 +27,50 @@ body{
 		}
 		.content::before{
 			height: 100%;
-			width:50%;
+			width:100px;
 			top: 30px;
+			left: -20px;
 			
 			border: 2px #000 solid;
 			border-bottom: none;
 			border-right: none;
-			z-index: -1;
 			
+			z-index: -1;
 			display: block;
 			position: absolute;	
 			content: "";
 		}
-		
+		.cont-right:first-child > .content::after{
+			border: none;
+			border-top: 2px #000 solid;
+
+			height: 100%;
+			width:100px;
+			top: 30px;
+			left: -50px;
+			
+			z-index: -1;
+			display: block;
+			position: absolute;	
+			content: "";
+		}
 
 		.cont-right:last-child > .content::before{
 			border: none;
 			border-top: 2px #000 solid;
 		}
 
-		.container{
+		.sortable{
 			display: flex;
 			flex-direction:column;
 			position: relative;
 		}
-		.container > .cont-right:first-child > .content::before{
-			width: 100px;
+		.sortable > .cont-right:first-child > .content::before{
+			width: 120px;
 			left: 50px;
 			
 		}
+
 
 		h8{
 			font-size: 0.8em;
@@ -65,4 +80,16 @@ body{
 		.account-box{
 			padding-top: 100px;
 			padding-bottom: 3px;
+		}
+		.placeholder{
+			outline: 1px dashed #4183C4;
+			width: 100px;
+			height: 50px;
+		}
+		.ui-sortable-helper .ui-sortable-handle::before,.ui-sortable-helper .ui-sortable-handle::after{
+			display: none;
+		}
+		.sortable > .cont-right:first-child > .content::after{
+			display: none;
+			
 		}
