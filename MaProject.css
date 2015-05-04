@@ -70,6 +70,17 @@ body{
 			left: 50px;
 			
 		}
+
+
+		h8{
+			font-size: 0.8em;
+
+		}
+
+		.account-box{
+			padding-top: 100px;
+			padding-bottom: 3px;
+		}
 		.placeholder{
 			outline: 1px dashed #4183C4;
 			width: 100px;

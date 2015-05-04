@@ -1,19 +1,65 @@
 <head>
-  <title>MaProject</title>
 </head>
 
 <body>
 
+<ul id="slide-out" class="side-nav">
+
+
+    <div class="row valign-wrapper purple darken-4 account-box">
+     	<div class="col s3">
+    		<img src="/chi.jpg" alt="" class="circle responsive-img">
+    	</div>
+    	<div class="col s7 white-text">
+             Aulia Rahma Azis
+           <h8>aulia.rahmazis@gmail.com</h8> 
+              
+    	</div>
+    </div>
+   	
+  <li><a href="#!">Main Page</a></li>
+  <li><a href="#!">Work Breakdown Structure</a></li>
+  <li><a href="#!">Price List</a></li>
+  <li class="divider"></li>
+  <li><a href="#"><i class="mdi-action-settings">&nbsp;</i>Settings</a></li>
+  <li><a href="#"><i class="mdi-action-help">&nbsp;</i>Help</a></li>
+  <li><a href="#">Sign Out</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+      </ul>
+    </li>
+  </ul>
+  
+  
+  
+<nav>
+    <div class="nav-wrapper deep-purple lighten-3">
+    	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+      &nbsp;<a href="#" class="brand-logo">MaProject</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#"><i class="mdi-content-save"></i></a></li>
+        <li><a href="#"><i class="mdi-navigation-more-vert"></i></a></li>
+      </ul>
+       <div class="fixed-action-btn" style="bottom: 30px; right: 24px;">
+    <a class="btn-floating btn-large waves-effect waves purple lighten-2"><i class="mdi-content-add"></i></a>
+  </div>
+        
+    </div>
+  </nav>
+
+   
+	
+
 		<ol class="sortable">
 			<li class="cont-right">
 				<div class="content">
-					<div class="paper">Mesjid</div>				
+					<div class="paper z-depth-1 red lighten-4">Mesjid</div>				
 				</div>
 
 				<ol class="cont-down">
 					<li class="cont-right">
 						<div class="content">
-							<div class="paper">Struktur</div>
+							<div class="paper z-depth-1 pink lighten-4">Struktur</div>
 						</div>
 						<ol class="cont-down">
 							<li class="cont-right">
@@ -52,15 +98,19 @@
 								<div class="content">
 									<div class="paper">Tambahan</div>
 								</div>
-								
+		
 							</li>
 						</ol>
 					</li>
 				</ol>
 			</li>
 		</ol>
-		
+	
 	<script type="text/javascript">
+			// Initialize collapse button
+	  $(".button-collapse").sideNav();
+	  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+	  //$('.collapsible').collapsible();
 		$(document).ready(function(){
 
 	        $('.sortable').nestedSortable({
