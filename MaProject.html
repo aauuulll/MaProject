@@ -44,7 +44,28 @@
     
     <a id="add-module" class="btn-floating btn-large">
     	<i id="plus-sign" class="mdi-content-add" ></i>
-    	<i id="close-add-module" class="mdi-content-clear black-text" style="display:none;cursor:pointer"></i>
+    	
+
+    	<div id="add-module-function">
+   			<div class="row">
+	    		<div class="col s10" style="padding:0">
+	    			<div class="nav-wrapper red darken-3">
+				      <form>
+				        <div class="input-field">
+				          <input id="search" type="search" required>
+				          <label for="search"><i class="mdi-action-search"></i></label>
+				          
+				        </div>		        
+				      </form>
+				    </div>
+			    </div>
+			    <div class="col s2 red darken-3" style="padding:0">
+			    	<i id="close-add-module" class="mdi-content-clear white-text" style="cursor:pointer; height:auto; padding-left:10px"></i>	
+			    </div>
+			      					
+		    </div>
+		</div>
+    	
 	</a>
   
   </div>
@@ -58,7 +79,9 @@
 		<ol class="sortable">
 			<li class="cont-right">
 				<div class="content">
-					<div class="paper z-depth-1 red lighten-4">Mesjid</div>				
+					<div class="paper z-depth-1 red lighten-4">
+						
+					Mesjid</div>				
 				</div>
 
 				<ol class="cont-down">
@@ -127,7 +150,8 @@
 			  	"cursor":"default"
 			  });
 			  $("#plus-sign").css("display","none");
-			  $("#close-add-module").css("display","block");
+			  
+			  
 			  
 		});
 			
@@ -140,7 +164,8 @@
 			  	"cursor":""
 			  	});
 			  	$("#plus-sign").css("display","");
-			  	$("#close-add-module").css("display","");
+			  	
+
 
 	    });
 		
