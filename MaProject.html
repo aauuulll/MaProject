@@ -53,18 +53,158 @@
 		<ol class="sortable">
 			<li class="cont-right">
 				<div class="content">
-					<div class="paper z-depth-1 red lighten-4">Mesjid</div>				
+					<div class="paper z-depth-1">
+						<div class="row">
+							<div class="col s6"><h5>Mesjid</h5></div>
+							<div class="col s6 right-align"><h6 class="str-badge">SNI</h6></div>
+							
+							<div class="row attributes">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea project-description"></textarea>
+											<label for="textarea1" class="project-description-label">Deskripsi</label>
+										</div>
+									</div>
+
+
+
+
+
+								</form>
+							</div>
+							         
+
+
+							
+						</div>
+					</div>				
 				</div>
 
 				<ol class="cont-down">
 					<li class="cont-right">
 						<div class="content">
-							<div class="paper z-depth-1 pink lighten-4">Struktur</div>
+							<div class="paper z-depth-1">Struktur</div>
 						</div>
 						<ol class="cont-down">
 							<li class="cont-right">
 								<div class="content">
-									<div class="paper">Beton</div>
+									<div class="paper">
+										<div class="row">
+											<div class="col s6"><h5>Beton</h5></div>
+											<div class="col s6 right-align"><h6 class="str-badge">SNI</h6></div>
+											
+											<div class="row attributes">
+												<form class="col s12">
+													<div class="row">
+														<div class="input-field col s12">
+															<textarea id="textarea1" class="materialize-textarea project-description"></textarea>
+															<label for="textarea1" class="project-description-label">Deskripsi</label>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="col s12">
+													        <h5>Bahan</h5>
+												         	<table class="ahs-table">
+													        	<thead>
+															          	<tr>
+															              <th class="center-align">Nama</th>
+															              <th class="center-align">Satuan</th>
+															              <th class="center-align">Indeks</th>
+															              <th class="center-align">Harga</th>
+															              <th class="center-align">Total</th>
+															          </tr>
+															    </thead>
+
+														    	<tbody>
+														          	<tr>
+														            	<td >Semen</td>
+														            	<td>
+														            		<div class="input-field center-align" style="width:50px">
+														    					<select>
+																			      <option value="unit">unit</option>
+																			      <option value="m">m</option>
+																			      <option value="m2">m<sup>2</sup></option>
+																			      <option value="m3">m<sup>3</sup></option>
+																			      <option value="kg" selected>kg</option>
+																			      <option value="OH">OH</option>
+														    					</select>
+														     				</div>									
+														           		</td>
+															            <td class="center-align">
+															            	<div class="input-field" style="width:50px">
+																	          <input value="2.3" id="indeks" type="text" class="small">   
+																	        </div>
+															            </td>
+															            <td class="right-align">Rp9896</td>
+															            <td class="right-align">Rp 1234567</td>
+														            </tr>
+														            <tr>
+															           	<td >Semen</td>
+														            	<td>
+														            		<div class="input-field center-align" style="width:50px">
+														    					<select>
+																			      <option value="unit">unit</option>
+																			      <option value="m">m</option>
+																			      <option value="m2">m<sup>2</sup></option>
+																			      <option value="m3">m<sup>3</sup></option>
+																			      <option value="kg" selected>kg</option>
+																			      <option value="OH">OH</option>
+														    					</select>
+														     				</div>									
+														           		</td>
+															            <td class="center-align">
+															            	<div class="input-field" style="width:50px">
+																	          <input value="2.3" id="indeks" type="text" class="small">          
+																	        </div>
+															            </td>
+															            <td class="right-align">Rp9896</td>
+															            <td class="right-align">Rp 1234567</td>
+														            </tr>
+														            <tr>
+															            <td >Semen</td>
+														            	<td>
+														            		<div class="input-field center-align" style="width:50px">
+														    					<select>
+																			      <option value="unit">unit</option>
+																			      <option value="m">m</option>
+																			      <option value="m2">m<sup>2</sup></option>
+																			      <option value="m3">m<sup>3</sup></option>
+																			      <option value="kg" selected>kg</option>
+																			      <option value="OH">OH</option>
+														    					</select>
+														     				</div>									
+														           		</td>
+															            <td class="center-align">
+															            	<div class="input-field" style="width:50px">
+																	          <input value="2.3" id="indeks" type="text" class="small">
+																	      	</div>
+															            </td>
+															            <td class="right-align">Rp9896</td>
+															            <td class="right-align">Rp 1234567</td>
+														            </tr>
+														        </tbody>
+														    </table>
+												        </div>
+												    </div>
+
+
+
+
+												</form>
+											</div>
+											         
+
+
+											
+										</div>
+
+
+
+
+
+									</div>
 								</div>
 								
 							</li>
@@ -107,11 +247,11 @@
 		</ol>
 	
 	<script type="text/javascript">
-			// Initialize collapse button
-	  $(".button-collapse").sideNav();
-	  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-	  //$('.collapsible').collapsible();
+			
 		$(document).ready(function(){
+
+			$(".button-collapse").sideNav();
+			
 
 	        $('.sortable').nestedSortable({
 	            handle: 'div',
@@ -121,6 +261,8 @@
 	            toleranceElement: '> div'
 
 	        });
+
+	        $('select').material_select();
 
 	    });
 	</script>
