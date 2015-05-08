@@ -137,4 +137,10 @@ body{
 			margin-bottom: 19px;
 		}
 
-		
+		.ahs-index{
+			text-align: center !important;
+		}
+
+		.ahs-nama{
+			text-align: left !important;
+		}
