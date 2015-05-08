@@ -126,6 +126,7 @@ body{
 			height: 1.3rem;
 			line-height: 1rem;
 			font-size: 1rem;
+			text-align: right;
 		}
 
 		.ahs-table td, .ahs-table th{
@@ -135,3 +136,5 @@ body{
 		.ahs-table input.small{
 			margin-bottom: 19px;
 		}
+
+		
