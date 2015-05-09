@@ -20,11 +20,17 @@ body{
 			background: #fff;
 			padding: 4px;
 			margin: 10px;
-			min-width: 100px;
-			min-height: 50px;
+			min-width: 200px;
+			min-height: 100px;
 			color: #222;
+
+			transition: all .3s;
 			
 		}
+		.paper .row{
+			margin-bottom: 5px;
+		}
+
 		.content::before{
 			height: 100%;
 			width:100px;
@@ -70,11 +76,19 @@ body{
 			left: 50px;
 			
 		}
-
+		.str-badge{
+			line-height: 1.804rem;
+  			margin: 0.82rem 0 0.656rem 0;
+		}
 
 		h8{
 			font-size: 0.8em;
 
+		}
+
+
+		.project-description-label{
+			margin-top: 1rem;
 		}
 
 		.account-box{
@@ -92,4 +106,58 @@ body{
 		.sortable > .cont-right:first-child > .content::after{
 			display: none;
 			
+		}
+
+	
+		.ui-sortable-helper .attributes{
+			display: none;
+		}
+
+
+
+		.ahs-table .mdi-navigation-arrow-drop-down{
+			top: -7px;
+			font-size: 20px;
+
+		}
+
+
+		.ahs-table .select-wrapper input.select-dropdown,.ahs-table input.small{
+			height: 1.3rem;
+			line-height: 1rem;
+			font-size: 1rem;
+			text-align: right;
+		}
+
+		.ahs-table td, .ahs-table th{
+			padding: 5px 20px;
+		}
+
+		.ahs-table input.small{
+			margin-bottom: 19px;
+		}
+
+		.ahs-index{
+			text-align: center !important;
+		}
+
+		.ahs-nama{
+			text-align: left !important;
+		}
+
+
+		.ahs .input-field label{
+			left: 0 !important;
+		}
+
+		h5 span{
+			font-size: 1rem;
+			font-style: italic;
+			color: blue;
+			margin-left: 0.7rem;
+
+		}
+
+		.paper .btn-flat{
+			padding: 0;
 		}
