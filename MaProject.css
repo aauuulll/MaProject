@@ -1,91 +1,125 @@
 /* CSS declarations go here */
+
+/* Global Style */
+
+h8{
+	font-size: 0.8em;
+
+}
+
+
+/* NavBar Style */
+.account-box{
+	padding-top: 100px;
+	padding-bottom: 3px;
+}
+
+
+/* Box MindMap Style */
+
 body{
-			background: #ddd;
-			z-index: 1;
-		}
-		.cont-right{
-			display: flex;
-			flex-direction:row;
-			position: relative;
-		}
-		.cont-down{
-			display: flex;
-			flex-direction:column;
-			position: relative;
-		}
-		.content{
 
-		}
-		.paper{
-			background: #fff;
-			padding: 4px;
-			margin: 10px;
-			min-width: 200px;
-			min-height: 100px;
-			color: #222;
+	background: #ddd;
+	z-index: 1;
+}
+.cont-right{
+	display: flex;
+	flex-direction:row;
+	position: relative;
+}
+.cont-down{
+	display: flex;
+	flex-direction:column;
+	position: relative;
+}
 
-			transition: all .3s;
-			
-		}
+.paper{
+	background: #fff;
+	padding: 4px;
+	margin: 10px;
+	min-width: 100px;
+	min-height: 50px;
+	color: #222;
+	
+}
+
+
+.sortable{
+	display: flex;
+	flex-direction:column;
+	position: relative;
+}
+
+
+/* Line MindMap Style */
+
+.content::before{
+	height: 100%;
+	width:100px;
+	top: 30px;
+	left: -20px;
+	
+	border: 2px #000 solid;
+	border-bottom: none;
+	border-right: none;
+	
+	z-index: -1;
+	display: block;
+	position: absolute;	
+	content: "";
+}
+.cont-right:first-child > .content::after{
+	border: none;
+	border-top: 2px #000 solid;
+
+	height: 100%;
+	width:100px;
+	top: 30px;
+	left: -50px;
+	
+	z-index: -1;
+	display: block;
+	position: absolute;	
+	content: "";
+}
+
+.cont-right:last-child > .content::before{
+	border: none;
+	border-top: 2px #000 solid;
+}
+
+
+.sortable > .cont-right:first-child > .content::before{ /* aka Root */
+	width: 120px;
+	left: 50px;
+	border-left: none;
+}
+.sortable > .cont-right:first-child > .content::after{ /* aka Root */
+	display: none;	
+}
+
+
+/* Drag&Drop Style */
+
+.placeholder{
+	outline: 1px dashed #4183C4;
+	width: 100px;
+	height: 50px;
+}
+
+.ui-sortable-helper .ui-sortable-handle::before,.ui-sortable-helper .ui-sortable-handle::after{
+	display: none;
+}
+
+
+
+
+
+
+	
 		.paper .row{
 			margin-bottom: 5px;
 		}
-
-		.content::before{
-			height: 100%;
-			width:100px;
-			top: 30px;
-			left: -20px;
-			
-			border: 2px #000 solid;
-			border-bottom: none;
-			border-right: none;
-			
-			z-index: -1;
-			display: block;
-			position: absolute;	
-			content: "";
-		}
-		.cont-right:first-child > .content::after{
-			border: none;
-			border-top: 2px #000 solid;
-
-			height: 100%;
-			width:100px;
-			top: 30px;
-			left: -50px;
-			
-			z-index: -1;
-			display: block;
-			position: absolute;	
-			content: "";
-		}
-
-		.cont-right:last-child > .content::before{
-			border: none;
-			border-top: 2px #000 solid;
-		}
-
-		.sortable{
-			display: flex;
-			flex-direction:column;
-			position: relative;
-		}
-		.sortable > .cont-right:first-child > .content::before{
-			width: 120px;
-			left: 50px;
-			
-		}
-		.str-badge{
-			line-height: 1.804rem;
-  			margin: 0.82rem 0 0.656rem 0;
-		}
-
-		h8{
-			font-size: 0.8em;
-
-		}
-
 
 		.project-description-label{
 			margin-top: 1rem;
@@ -95,14 +129,8 @@ body{
 			padding-top: 100px;
 			padding-bottom: 3px;
 		}
-		.placeholder{
-			outline: 1px dashed #4183C4;
-			width: 100px;
-			height: 50px;
-		}
-		.ui-sortable-helper .ui-sortable-handle::before,.ui-sortable-helper .ui-sortable-handle::after{
-			display: none;
-		}
+		
+		
 		.sortable > .cont-right:first-child > .content::after{
 			display: none;
 			
@@ -157,6 +185,9 @@ body{
 			margin-left: 0.7rem;
 
 		}
+
+
+/* hide/show button*/
 
 		.paper .btn-flat{
 			padding: 0;
