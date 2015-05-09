@@ -144,3 +144,20 @@ body{
 		.ahs-nama{
 			text-align: left !important;
 		}
+
+
+		.ahs .input-field label{
+			left: 0 !important;
+		}
+
+		h5 span{
+			font-size: 1rem;
+			font-style: italic;
+			color: blue;
+			margin-left: 0.7rem;
+
+		}
+
+		.paper .btn-flat{
+			padding: 0;
+		}
