@@ -40,9 +40,8 @@
         <li><a href="#"><i class="mdi-content-save"></i></a></li>
         <li><a href="#"><i class="mdi-navigation-more-vert"></i></a></li>
       </ul>
-       <div class="fixed-action-btn" style="bottom: 30px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves purple lighten-2"><i class="mdi-content-add"></i></a>
-  </div>
+        
+
         
     </div>
   </nav>
@@ -53,7 +52,9 @@
 		<ol class="sortable">
 			<li class="cont-right">
 				<div class="content">
-					<div class="paper z-depth-1 red lighten-4">Mesjid</div>				
+					<div class="paper z-depth-1 red lighten-4">
+						
+					Mesjid</div>				
 				</div>
 
 				<ol class="cont-down">
@@ -104,14 +105,98 @@
 					</li>
 				</ol>
 			</li>
+
+			<div class="fixed-action-btn" style="bottom: 30px; right: 24px;">
+	    
+			    <a id="add-module" class="btn-floating btn-large">
+			    	<i id="plus-sign" class="mdi-content-add" ></i>
+			    	
+
+			    	<div id="add-module-function" class="grey">
+			   			<div class="row">
+			   				<nav class="red darken-3">
+							    <div class="nav-wrapper">
+							      <form>
+							        <div class="input-field">
+							          <input id="search" type="search" required>
+							          <label for="search"><i class="mdi-action-search white-text"></i></label>
+							          <i class="mdi-navigation-close white-text" id="close-add-module"></i>
+							        </div>
+							      </form>
+							    </div>    	
+							</nav>
+				    		
+						      					
+					    </div>
+
+						<div id="modules">
+							<ol >
+								<li class="cont-right">
+									<div class="content">
+										<div class="paper">Atap</div>
+									</div>
+									
+								</li>
+								<li class="cont-right">
+									<div class="content">
+										<div class="paper">Tambahan</div>
+									</div>
+			
+								</li>
+							</ol>
+
+							
+						</div>
+
+
+					</div>
+			    	
+				</a>
+			  
+			</div>
+
+
+
 		</ol>
 	
 	<script type="text/javascript">
-			// Initialize collapse button
-	  $(".button-collapse").sideNav();
-	  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-	  //$('.collapsible').collapsible();
+
+
+		
+			
+	    $(".button-collapse").sideNav();
+	 	
+	 	$( "#plus-sign" ).click(function() {
+			  $("#add-module").css({
+			  	"backgroundColor" : "#fff",
+			  	"width" : "300px",
+			  	"height" : "500px",
+			  	"border-radius":"0",
+			  	"cursor":"default"
+			  });
+			  $("#plus-sign").css("display","none");
+			  
+			  
+			  
+		});
+			
+		$("#close-add-module").click(function(){
+			  	$("#add-module").css({
+			  	"backgroundColor" : "",
+			  	"width" : "",
+			  	"height" : "",
+			  	"border-radius":"",
+			  	"cursor":""
+			  	});
+			  	$("#plus-sign").css("display","");
+			  	
+
+
+	    });
+		
+
 		$(document).ready(function(){
+			
 
 	        $('.sortable').nestedSortable({
 	            handle: 'div',
