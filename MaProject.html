@@ -97,6 +97,7 @@
 												              <th class="center-align">Satuan</th>
 												              <th class="center-align">Indeks</th>
 												              <th class="center-align">Harga</th>
+												              <th class="center-align">Total</th>
 												             </tr>
 									         			</thead>
 
@@ -104,7 +105,7 @@
 																          	<tr>
 																            	<td class="center-align">
 																	            	<div class="input-field" style="width:100px">
-																			          <input value="Semen" id="bahan" type="text" class="small ahs-nama">   
+																			          <input value="Beton" id="bahan" type="text" class="small ahs-nama">   
 																			        </div>
 																            	</td>
 																            	<td>
@@ -130,6 +131,12 @@
 																			          <input value="Rp 1234" id="harga" type="text" class="small">   
 																			        </div>
 																            	</td>
+
+																            	  <td class="total">
+																	               	<div class="input-field" style="width:100px">
+																			          <input value="Rp 12340" id="total" type="text" class="small">   
+																			        </div>
+																            	</td>
 																	            
 																	            </tr>
 														         			</tbody>
@@ -138,6 +145,10 @@
 							</div>
 								</div>
 									</div>
+
+
+
+
 						<ol class="cont-down">
 							<li class="cont-right">
 								<div class="content">
@@ -752,6 +763,8 @@
 	        $("#toggle-beton").click(function(){
         		$("#beton-ahs").toggle();
         	});
+
+
 
 	       // $('select').material_select();
 
