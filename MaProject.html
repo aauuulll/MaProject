@@ -38,8 +38,8 @@
   
 <nav>
     <div class="nav-wrapper deep-purple lighten-3">
-    	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
-      &nbsp;<a href="#" class="brand-logo">MaProject</a>
+    	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>&nbsp;<a href="#" class="brand-logo">MaProject</a>
+      
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#"><i class="mdi-content-save"></i></a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Show<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
@@ -49,11 +49,11 @@
 
         
     </div>
-  </nav>
+</nav>
 
    
 	
-
+<!--
 		<ol class="sortable">
 			<li class="cont-right">
 				<div class="content">
@@ -644,6 +644,91 @@
 					</li>
 				</ol>
 			</li>
+		</ol>
+			-->
+
+			<div class="sortable">
+				<ol class="cont-down">
+				    <li class="cont-right" data-id="1">
+				        <div class="dd-handle">Item 1
+				        
+					        <div class="content">
+								<div class="paper z-depth-1">
+									<div class="row">
+										<div class="col s6"><h5>Mesjid</h5></div>
+										
+
+									</div>
+								</div>				
+
+							</div>
+						</div>
+
+				    </li>
+				    <li class="cont-right" data-id="2">
+				        <div class="dd-handle">Item 2
+				        
+					        <div class="content">
+								<div class="paper z-depth-1">
+									<div class="row">
+										<div class="col s6"><h5>Mesjid</h5></div>
+										
+
+									</div>
+								</div>				
+
+							</div>
+						</div>
+				    </li>
+				    <li class="cont-right" data-id="3">
+				        <div class="dd-handle">Item 3
+				        
+					        <div class="content">
+								<div class="paper z-depth-1">
+									<div class="row">
+										<div class="col s6"><h5>Mesjid</h5></div>
+										
+
+									</div>
+								</div>				
+
+							</div>
+						</div>
+				        <ol class="cont-down">
+				            <li class="cont-right" data-id="4">
+				                <div class="dd-handle">Item 4
+				        
+					        <div class="content">
+								<div class="paper z-depth-1">
+									<div class="row">
+										<div class="col s6"><h5>Mesjid</h5></div>
+										
+
+									</div>
+								</div>				
+
+							</div>
+						</div>
+				            </li>
+				            <li class="cont-right" data-id="5">
+				                <div class="dd-handle">Item 5
+				        
+					        <div class="content">
+								<div class="paper z-depth-1">
+									<div class="row">
+										<div class="col s6"><h5>Mesjid</h5></div>
+										
+
+									</div>
+								</div>				
+
+							</div>
+						</div>
+				            </li>
+				        </ol>
+				    </li>
+				</ol>
+			</div>
 
 			<div class="fixed-action-btn" style="bottom: 30px; right: 24px;">
 	    
@@ -693,10 +778,10 @@
 				</a>
 			  
 			</div>
+	
+	
 
-
-
-		</ol>
+		
 	
 	<script type="text/javascript">
 
@@ -728,6 +813,7 @@
 			  	"border-radius":"",
 			  	"cursor":""
 			  	});
+			  	
 			  	$("#plus-sign").css("display","");
 			  	
 
@@ -739,21 +825,18 @@
 
 			$(".button-collapse").sideNav();
 			
+			
 
-	        $('.sortable').nestedSortable({
-	            handle: 'div',
-	            items: 'li',
-	            placeholder: 'placeholder',
-	            protectRoot:'true',
-	            toleranceElement: '> div'
+			$('.sortable').nestable({ 
+				listClass:"cont-down",
+				itemClass:"cont-right",
 
-	        
-	        });
+			 }); 
+
+
 	        $("#toggle-beton").click(function(){
         		$("#beton-ahs").toggle();
         	});
-
-	       // $('select').material_select();
 
 	    });
 	</script>
