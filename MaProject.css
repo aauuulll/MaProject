@@ -15,176 +15,26 @@ h8{
 }
 
 
-/* Box MindMap Style */
 
 body{
 
-	background: #ddd;
+	background: #fff;
 	z-index: 1;
 }
-.cont-right{
-	display: flex;
-	flex-direction:row;
-	position: relative;
-}
-.cont-down{
-	display: flex;
-	flex-direction:column;
-	position: relative;
+
+
+
+/* Table Style */
+#project-table{
+	padding: 0
 }
 
-.paper{
-	background: #fff;
-	padding: 4px;
-	margin: 10px;
-	min-width: 100px;
-	min-height: 50px;
-	color: #222;
-	
-}
-
-
-.sortable{
-	display: flex;
-	flex-direction:column;
-	position: relative;
-}
-
-
-/* Line MindMap Style */
-
-.content::before{
-	height: 100%;
-	width:100px;
-	top: 30px;
-	left: -20px;
-	
-	border: 2px #000 solid;
-	border-bottom: none;
-	border-right: none;
-	
-	z-index: -1;
-	display: block;
-	position: absolute;	
-	content: "";
-}
-.cont-right:first-child > .content::after{
-	border: none;
-	border-top: 2px #000 solid;
-
-	height: 100%;
-	width:100px;
-	top: 30px;
-	left: -50px;
-	
-	z-index: -1;
-	display: block;
-	position: absolute;	
-	content: "";
-}
-
-.cont-right:last-child > .content::before{
-	border: none;
-	border-top: 2px #000 solid;
-}
-
-
-.sortable > .cont-right:first-child > .content::before{ /* aka Root */
-	width: 120px;
-	left: 50px;
-	border-left: none;
-}
-.sortable > .cont-right:first-child > .content::after{ /* aka Root */
-	display: none;	
-}
-
-
-/* Drag&Drop Style */
-
-.placeholder{
-	outline: 1px dashed #4183C4;
-	width: 100px;
-	height: 50px;
-}
-
-.ui-sortable-helper .ui-sortable-handle::before,.ui-sortable-helper .ui-sortable-handle::after{
+/* Testing */
+.module{
+	background: #000;
+	height: 500px;
 	display: none;
 }
-
-
-
-
-
-
-	
-		.paper .row{
-			margin-bottom: 5px;
-		}
-
-		.project-description-label{
-			margin-top: 1rem;
-		}
-
-		.account-box{
-			padding-top: 100px;
-			padding-bottom: 3px;
-		}
-		
-		
-		.sortable > .cont-right:first-child > .content::after{
-			display: none;
-			
-		}
-
-	
-		.ui-sortable-helper .attributes{
-			display: none;
-		}
-
-
-
-		.ahs-table .mdi-navigation-arrow-drop-down{
-			top: -7px;
-			font-size: 20px;
-
-		}
-
-
-		.ahs-table .select-wrapper input.select-dropdown,.ahs-table input.small{
-			height: 1.3rem;
-			line-height: 1rem;
-			font-size: 1rem;
-			text-align: right;
-		}
-
-		.ahs-table td, .ahs-table th{
-			padding: 5px 20px;
-		}
-
-		.ahs-table input.small{
-			margin-bottom: 19px;
-		}
-
-		.ahs-index{
-			text-align: center !important;
-		}
-
-		.ahs-nama{
-			text-align: left !important;
-		}
-
-
-		.ahs .input-field label{
-			left: 0 !important;
-		}
-
-		h5 span{
-			font-size: 1rem;
-			font-style: italic;
-			color: blue;
-			margin-left: 0.7rem;
-
-		}
 
 
 /* hide/show button*/
@@ -192,3 +42,19 @@ body{
 		.paper .btn-flat{
 			padding: 0;
 		}
+
+
+		#project-nav{
+  font-size: 1.8rem;
+  height: 56px;
+  padding-left: 20px;
+  
+}
+
+#project-logo{
+	position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-left: 25px;
+}

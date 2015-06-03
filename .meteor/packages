@@ -8,5 +8,6 @@ meteor-platform
 autopublish
 insecure
 materialize:materialize
-rubaxa:sortable
 linto:jquery-ui
+webix:webix
+webix:skin-material-design

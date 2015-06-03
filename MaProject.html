@@ -3,712 +3,82 @@
 
 <body>
 
-<ul id="slide-out" class="side-nav">
+	<ul id="slide-out" class="side-nav">
 
 
-    <div class="row valign-wrapper purple darken-4 account-box">
-     	<div class="col s3">
-    		<img src="/chi.jpg" alt="" class="circle responsive-img">
-    	</div>
-    	<div class="col s7 white-text">
-             Aulia Rahma Azis
-           <h8>aulia.rahmazis@gmail.com</h8> 
-              
-    	</div>
-    </div>
-   	
-  <li><a href="#!">Main Page</a></li>
-  <li><a href="#!">Work Breakdown Structure</a></li>
-  <li><a href="#!">Price List</a></li>
-  <li class="divider"></li>
-  <li><a href="#"><i class="mdi-action-settings">&nbsp;</i>Settings</a></li>
-  <li><a href="#"><i class="mdi-action-help">&nbsp;</i>Help</a></li>
-  <li><a href="#">Sign Out</a></li>
-    <li class="no-padding">
-      <ul class="collapsible collapsible-accordion">
-      </ul>
-    </li>
-  </ul>
-  
- <ul id="dropdown1" class="dropdown-content">
-   <li><a href="#!">Harga</a></li>
-  		<input type="checkbox" id="test5" />
-        <li><a href="#!">Indeks</a></li>
- </ul> 
-  
-<nav>
-    <div class="nav-wrapper deep-purple lighten-3">
-    	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
-      &nbsp;<a href="#" class="brand-logo">MaProject</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#"><i class="mdi-content-save"></i></a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Show<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+	    <div class="row valign-wrapper purple darken-4 account-box">
+	     	<div class="col s3">
+	    		<img src="/chi.jpg" alt="" class="circle responsive-img">
+	    	</div>
+	    	<div class="col s7 white-text">
+	             Aulia Rahma Azis
+	           <h8>aulia.rahmazis@gmail.com</h8> 
+	              
+	    	</div>
+	    </div>
+	   	
+	    <li><a href="#!">Main Page</a></li>
+	    <li><a href="#!">Work Breakdown Structure</a></li>
+	    <li><a href="#!">Price List</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#"><i class="mdi-action-settings">&nbsp;</i>Settings</a></li>
+	    <li><a href="#"><i class="mdi-action-help">&nbsp;</i>Help</a></li>
+	    <li><a href="#">Sign Out</a></li>
+	    <li class="no-padding">
+		    <ul class="collapsible collapsible-accordion">
+		    </ul>
+	    </li>
+	</ul>
 
-      </ul>
-        
+	<ul id="dropdown1" class="dropdown-content">
+	    <li><a href="#!">Export</a></li>
+	    <li><a href="#!">Share</a></li>
+	</ul> 
+  <div class="navbar-fixed">
+	<nav>
+	    <div class="nav-wrapper deep-purple">
+	    	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu" id="project-nav"></i></a>&nbsp;<a href="#" class="brand-logo" id="project-logo">MaProject</a>
+	      
+	        <ul id="nav-mobile" class="right hide-on-med-and-down">
+	           <li><a href="#"><i class="mdi-content-save"></i></a></li>
+	           <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="mdi-navigation-more-vert right"></i></a></li>
 
-        
-    </div>
-  </nav>
+	        </ul>
 
-   
-	
+	    </div>
+	</nav>
+  </div>
 
-		<ol class="sortable">
-			<li class="cont-right">
-				<div class="content">
-					<div class="paper z-depth-1">
-						<div class="row">
-							<div class="col s6"><h5>Mesjid</h5></div>
-							<div class="col s6 right-align"></div>
-							
-							<div class="row attributes">
-								<form class="col s12">
-									<div class="row">
-										<div class="input-field col s12">
-											<textarea id="textarea1" class="materialize-textarea project-description"></textarea>
-											<label for="textarea1" class="project-description-label">Deskripsi</label>
-										</div>
-									</div>
-								</form>
-							</div>
-							         
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	    <a class="btn-floating btn-large red">
+	      <i class="large mdi-editor-mode-edit"></i>
+	    </a>
+	    <ul>
+	      <li><a class="btn-floating blue"><i class="large mdi-action-list"></i></a></li>
+	    </ul>
+	</div>
 
-
-							
-						</div>
-					</div>				
-
-				</div>
-
-				<ol class="cont-down">
-					<li class="cont-right">
-						<div class="content">
-							<div class="paper z-depth-1">
-								<div class="row"></div>
-								<div class="col s6"><h5>Struktur</h5></div>
-								<div class="row attributes">
-									<div class="col s12">
-										
-										       		<table class="ahs-table">
-									         			<thead>
-									         				<tr>
-									         				  <th class="center-align">Nama</th>
-												              <th class="center-align">Satuan</th>
-												              <th class="center-align">Indeks</th>
-												              <th class="center-align">Harga</th>
-												              <th class="center-align">Total</th>
-												             </tr>
-									         			</thead>
-
-									         			<tbody>
-																          	<tr>
-																            	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Beton" id="bahan" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" selected>kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     			</td>
-
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px" >
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">   
-																			        </div>
-																	            </td>
-
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-
-																            	  <td class="total">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            </tr>
-														         			</tbody>
-									         			</table>
-						</div>
-							</div>
-								</div>
-									</div>
-
-
-
-
-						<ol class="cont-down">
-							<li class="cont-right">
-								<div class="content">
-									<div class="paper">
-										<div class="row">
-											<div class="col s6"><h5>Beton<span>SNI</span></h5></div>
-											<div class="col s6 right-align"><a class="btn-flat" id="toggle-beton"><i class="mdi-navigation-expand-more"></i></a></div>
-
-										
-											<div class="row ahs attributes" id="beton-ahs">
-												<form class="col 12">
-													<div class="row">
-														<div class="col s6">
-															<div class="input-field">
-																<input placeholder="Nama" id="nama" type="text">
-																<label for="nama">Nama</label>
-															</div>
-															<div class="input-field">
-																<input placeholder="indeks" type="text">
-																<label for="indeks">Indeks</label>
-															</div>
-															
-																<label>Satuan</label>
-																<select class="browser-default center-align" style="width:70px">>
-															      <option value="unit">unit</option>
-															      <option value="m">m</option>
-															      <option value="m2">m<sup>2</sup></option>
-															      <option value="m3">m<sup>3</sup></option>
-															      <option value="kg" selected>kg</option>
-															      <option value="OH">OH</option>
-										    					</select>
-										    					
-	          								          		
-										 
-
-
-
-														</div>
-														<div class="col s6">
-															<div class="input-field">
-																<textarea id="textarea1" class="materialize-textarea project-description"></textarea>
-																<label for="textarea1" class="project-description-label">Deskripsi</label>
-															</div>
-														</div>
-																		
-										
-																		
-													</div>	
-													
-													
-
-													<div class="row">
-														<div class="col s12">
-															
-															<div class="row">
-																<div class="col s12">
-															        <h5>Bahan</h5>
-														         		<table class="ahs-table">
-														         			<thead>
-														         				<tr>
-														         				  <th class="center-align">Nama</th>
-																	              <th class="center-align">Satuan</th>
-																	              <th class="center-align">Indeks</th>
-																	              <th class="center-align">Harga</th>
-																	              <th class="center-align">Total</th>
-														         				</tr>
-														         			</thead>
-
-
-																    	<tbody>
-																          	<tr>
-																            	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Semen" id="bahan" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" selected>kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     			</td>
-
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px" >
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">   
-																			        </div>
-																	            </td>
-
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-
-																            <tr>
-																	           	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Pasir" id="bahan" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" selected>kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     											
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">          
-																			        </div>
-																	            </td>
-																	             <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-																            <tr>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Kerikil" id="bahan" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" selected>kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     													
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">
-																			      	</div>
-																	            </td>
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-														         			</tbody>
-														         		</table>
-														        </div>
-														    </div>
-
-
-														    <div class="row">
-																<div class="col s12">
-															        <h5>Tenaga Kerja</h5>
-														         		<table class="ahs-table">
-														         			<thead>
-														         				<tr>
-														         				  <th class="center-align">Nama</th>
-																	              <th class="center-align">Satuan</th>
-																	              <th class="center-align">Indeks</th>
-																	              <th class="center-align">Harga</th>
-																	              <th class="center-align">Total</th>
-														         				</tr>
-														         			</thead>
-
-
-																    	<tbody>
-																          	<tr>
-																            	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Tukang Batu" id="kerja" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg">kg</option>
-																					      <option value="OH" selected>OH</option>
-																    					</select>
-																     			</td>
-
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px" >
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">   
-																			        </div>
-																	            </td>
-
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-
-																            <tr>
-																	           	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Tukang Kayu" id="kerja" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" >kg</option>
-																					      <option value="OH" selected>OH</option>
-																    					</select>
-																     											
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">          
-																			        </div>
-																	            </td>
-																	             <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-																            <tr>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Tukang Besi" id="kerja" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit">unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg">kg</option>
-																					      <option value="OH" selected>OH</option>
-																    					</select>
-																     													
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">
-																			      	</div>
-																	            </td>
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-														         			</tbody>
-														         		</table>
-														        </div>
-														    </div>
-
-
-														     <div class="row">
-																<div class="col s12">
-															        <h5>Alat</h5>
-														         		<table class="ahs-table">
-														         			<thead>
-														         				<tr>
-														         				  <th class="center-align">Nama</th>
-																	              <th class="center-align">Satuan</th>
-																	              <th class="center-align">Indeks</th>
-																	              <th class="center-align">Harga</th>
-																	              <th class="center-align">Total</th>
-														         				</tr>
-														         			</thead>
-
-
-																    	<tbody>
-																          	<tr>
-																            	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Traktor" id="alat" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit" selected>unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg">kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     			</td>
-
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px" >
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">   
-																			        </div>
-																	            </td>
-
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-
-																            <tr>
-																	           	<td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Crane" id="alat" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit" selected>unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" >kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     											
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">          
-																			        </div>
-																	            </td>
-																	             <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-
-																            <tr>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Mixer Truck" id="alat" type="text" class="small ahs-nama">   
-																			        </div>
-																            	</td>
-																            	<td>
-																            		
-																    					<select class="browser-default center-align" style="width:70px">>
-																					      <option value="unit" selected>unit</option>
-																					      <option value="m">m</option>
-																					      <option value="m2">m<sup>2</sup></option>
-																					      <option value="m3">m<sup>3</sup></option>
-																					      <option value="kg" >kg</option>
-																					      <option value="OH">OH</option>
-																    					</select>
-																     													
-																           		</td>
-																	            <td class="center-align">
-																	            	<div class="input-field" style="width:50px">
-																			          <input value="2.3" id="indeks" type="text" class="small ahs-index">
-																			      	</div>
-																	            </td>
-																	            <td class="harga">
-																	               	<div class="input-field" style="width:100px">
-																			          <input value="Rp 1234" id="harga" type="text" class="small">   
-																			        </div>
-																            	</td>
-																	            
-																	            <td class="total">
-																	            	<div class="input-field" style="width:100px">
-																			          <input value="Rp 12340" id="total" type="text" class="small">   
-																			        </div>
-																	            </td>
-																            </tr>
-														         			</tbody>
-														         		</table>
-														        </div>
-														    </div>
-														</div>
-														   
-
-														</div>
-													
-
-													<div class="col s6 offset-s6 grid-example">
-														<h5>Total</h5>
-													</div>
-
-												</form>
-											</div>
-
-
-
-
-
-										</div>
-									</div>
-								</div>
-								
-							</li>
-							<li class="cont-right">
-								<div class="content">
-									<div class="paper">Besi</div>
-								</div>
-							</li>
-							
-							<li class="cont-right">
-								<div class="content">
-									<div class="paper">Bekisting</div>
-								</div>
-								
-							</li>
-							
-						</ol>
-					</li>
-					<li class="cont-right">
-						<div class="content">
-							<div class="paper">Arsitektur</div>
-						</div>
-						<ol class="cont-down">
-							<li class="cont-right">
-								<div class="content">
-									<div class="paper">Atap</div>
-								</div>
-								
-							</li>
-							<li class="cont-right">
-								<div class="content">
-									<div class="paper">Tambahan</div>
-								</div>
-		
-							</li>
-						</ol>
-					</li>
-				</ol>
-			</li>
-
-			<div class="fixed-action-btn" style="bottom: 30px; right: 24px;">
-	    
-			    <a id="add-module" class="btn-floating btn-large">
-			    	<i id="plus-sign" class="mdi-content-add" ></i>
-			    	
-
-			    	<div id="add-module-function" class="grey">
-			   			<div class="row">
-			   				<nav class="red darken-3">
-							    <div class="nav-wrapper">
-							      <form>
-							        <div class="input-field">
-							          <input id="search" type="search" required>
-							          <label for="search"><i class="mdi-action-search white-text"></i></label>
-							          <i class="mdi-navigation-close white-text" id="close-add-module"></i>
-							        </div>
-							      </form>
-							    </div>    	
-							</nav>
-				    		
-						      					
-					    </div>
-
-						<div id="modules">
-							<ol >
-								<li class="cont-right">
-									<div class="content">
-										<div class="paper">Atap</div>
-									</div>
-									
-								</li>
-								<li class="cont-right">
-									<div class="content">
-										<div class="paper">Tambahan</div>
-									</div>
+	<div class="row project">
+		<div class="col s12" id="project-table">
 			
-								</li>
-							</ol>
+		</div>
 
-							
-						</div>
+		
+	</div>
 
-
-					</div>
-			    	
-				</a>
-			  
-			</div>
-
-
-
-		</ol>
+	<div class="container">
+		<div class="row module">
+			
+		</div>
+		<div class="row list">
+			
+		</div>
+	</div>
 	
+
+
+
+
 	<script type="text/javascript">
 
 
@@ -739,35 +109,13 @@
 			  	"border-radius":"",
 			  	"cursor":""
 			  	});
+			  	
 			  	$("#plus-sign").css("display","");
 			  	
 
 
 	    });
 		
-		$(document).ready(function(){
-			
 
-			$(".button-collapse").sideNav();
-			
-
-	        $('.sortable').nestedSortable({
-	            handle: 'div',
-	            items: 'li',
-	            placeholder: 'placeholder',
-	            protectRoot:'true',
-	            toleranceElement: '> div'
-
-	        
-	        });
-	        $("#toggle-beton").click(function(){
-        		$("#beton-ahs").toggle();
-        	});
-
-
-
-	       // $('select').material_select();
-
-	    });
 	</script>
 </body>
