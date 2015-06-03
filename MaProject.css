@@ -22,11 +22,19 @@ body{
 	z-index: 1;
 }
 
+
+
+/* Table Style */
 #project-table{
 	padding: 0
 }
 
-
+/* Testing */
+.module{
+	background: #000;
+	height: 500px;
+	display: none;
+}
 
 
 /* hide/show button*/
