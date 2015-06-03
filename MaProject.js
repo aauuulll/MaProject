@@ -54,6 +54,8 @@ if (Meteor.isClient) {
 				scrollX:false,
 				scrollY:true,
 				drag:true,
+				on: {"onBeforeDragIn": function () {jQuery("#add-module").animate({bottom:-600})}},
+				on: {"onAfterDrop": function () {jQuery("#add-module").animate({bottom:0})}},
 
 				data: [
 					{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1},
