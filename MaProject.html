@@ -50,7 +50,7 @@
   </div>
 
 	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-	    <a class="btn-floating btn-large red">
+	    <a class="btn-floating btn-large red" id="show-add-module">
 	      <i class="large mdi-editor-mode-edit"></i>
 	    </a>
 	    <ul>
@@ -65,14 +65,14 @@
 		
 	</div>
 
-	<div class="container">
-		<div class="row module">
-			
-		</div>
-		<div class="row list">
-			
-		</div>
+	
+	<div class="z-depth-4" id="add-module">
+		<div class="title-bar purple darken-3"><span class="left title-bar-title">Add Module</span><a id="close-add-module" class="right close-module"><i class="small mdi-content-clear"></i></a></div>
 	</div>
+
+
+	<div class="z-depth-4" id="item-list"></div>
+
 	
 
 
@@ -82,38 +82,23 @@
 
 
 
+		$("#show-add-module").click(function(){
+
+			$("#add-module").animate({
+				bottom:0,
+				opacity:1
+			});
+			$("#close-add-module").click(function(){
+
+				$("#add-module").animate({
+					bottom:-700,
+					opacity:0
+				})
+			});
+		});
 		
 			
 	    $(".button-collapse").sideNav();
 	 	
-	 	$( "#plus-sign" ).click(function() {
-			  $("#add-module").css({
-			  	"backgroundColor" : "#fff",
-			  	"width" : "300px",
-			  	"height" : "500px",
-			  	"border-radius":"0",
-			  	"cursor":"default"
-			  });
-			  $("#plus-sign").css("display","none");
-			  
-			  
-			  
-		});
-			
-		$("#close-add-module").click(function(){
-			  	$("#add-module").css({
-			  	"backgroundColor" : "",
-			  	"width" : "",
-			  	"height" : "",
-			  	"border-radius":"",
-			  	"cursor":""
-			  	});
-			  	
-			  	$("#plus-sign").css("display","");
-			  	
-
-
-	    });
-		
 	</script>
 </body>

@@ -13,7 +13,7 @@ if (Meteor.isClient) {
 				],
 				autoheight:true,
 				scrollX:false,
-
+				drag:true,
 				data: [
 					{ "id":"1", "value":"The Shawshank Redemption", "open":true, "data":[
 						{ "id":"1.1", "value":"Part 1", "chapter":"alpha"},
@@ -41,6 +41,26 @@ if (Meteor.isClient) {
 					]}
 				]
 			});	
+			gridb = webix.ui({
+				container:"add-module",
+				view:"datatable",
+				columns:[
+					{ id:"rank",	header:"", css:"rank"},
+					{ id:"title",	header:"Film title"},
+					{ id:"year",	header:"Released" },
+					{ id:"votes",	header:"Votes"}
+				],
+				
+				scrollX:false,
+				scrollY:true,
+				drag:true,
+
+				data: [
+					{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1},
+					{ id:2, title:"The Godfather", year:1972, votes:511495, rating:9.2, rank:2}
+				]
+			});	
+			
 		});		
   
   
