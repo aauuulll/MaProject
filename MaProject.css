@@ -15,7 +15,6 @@ h8{
 }
 
 
-/* Box MindMap Style */
 
 body{
 
@@ -23,13 +22,9 @@ body{
 	z-index: 1;
 }
 
-
-
-
-/* Line MindMap Style */
-
-
-/* Drag&Drop Style */
+#project-table{
+	padding: 0
+}
 
 
 
