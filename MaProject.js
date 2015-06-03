@@ -54,13 +54,20 @@ if (Meteor.isClient) {
 				scrollX:false,
 				scrollY:true,
 				drag:true,
-				on: {"onBeforeDragIn": function () {jQuery("#add-module").animate({bottom:-600})}},
-				on: {"onAfterDrop": function () {jQuery("#add-module").animate({bottom:0})}},
-
+				
 				data: [
 					{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1},
 					{ id:2, title:"The Godfather", year:1972, votes:511495, rating:9.2, rank:2}
 				]
+			});
+			gridb.attachEvent("onBeforeDragIn", function(context, native_event){
+			    $("#add-module").animate({bottom:-150})
+			});	
+			grida.attachEvent("onAfterDrop", function(context, native_event){
+			     $("#add-module").animate({bottom:0})
+			});	
+			gridb.attachEvent("onAfterDrop", function(context, native_event){
+			     $("#add-module").animate({bottom:0})
 			});	
 			
 		});		
