@@ -29,12 +29,34 @@ body{
 	padding: 0
 }
 
-/* Testing */
-.module{
-	background: #000;
-	height: 500px;
-	display: none;
+#add-module, #item-list{
+	background: #fff;
+	height: 300px;
+	width: 700px;
+	opacity: 0;
+
+	position: fixed;
+	bottom: -300px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+
 }
+.title-bar{
+	height: 40px;
+	text-align: left;
+	color: #fff;
+}
+.title-bar-title{
+	margin:10px;
+}
+.close-module{
+	color: #fff;
+	margin-right:8px;
+}
+/* Testing */
+
 
 
 /* hide/show button*/
