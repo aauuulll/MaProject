@@ -7,6 +7,7 @@ Router.route('/app');
 
 Router.route('/register');
 
+Router.route('/addnew');
 
 if (Meteor.isClient) {
   
